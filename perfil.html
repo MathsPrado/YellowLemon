@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <style>
+       body {
+            background-image: url("image/yellow.jpg");
+        }
+
+      
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Projeto Yellow Lemon</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li >
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="perfil.html">Perfil</a>
+                </li>
+                <li>
+                    <a href="">Chat</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+                <li>
+                  <a href="questionario.html">Questionario</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+            
+                <input id="clone" type="text" class="form-control" placeholder="Digite..." aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                  <button  class="btn btn-outline-secondary" onclick="milgrau()" type="button">Enviar</button>
+                </div>
+            
+          </div>
+      
+        <div  id="pop" class="my-3 p-3 bg-white rounded shadow-sm">
+          <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+          <div class="media text-muted pt-3">
+            
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <strong class="d-block text-gray-dark">@username</strong>
+              Vamos conversar sobre alguma coisa
+            </p>
+          </div>
+          
+         
+        </div>
+      
+        
+        </div>
+      </main>
+      <script>
+  function milgrau(){
+    var elmain = document.getElementById('pop');
+    var elinp = document.getElementsById('clone').value;  
+    let eldiv = document.createElement('div');
+    eldiv.className = "media text-muted pt-3";
+    let elp = document.createElement('p');
+    elp.className = 'media-body pb-3 mb-0 small lh-125 border-bottom border-gray';
+    let elstrong = document.createElement('strong');
+    var textx = document.createTextNode("@user");
+    elstrong.innerHTML = textx;
+    elp.appendChild(elstrong);
+    eldiv.appendChild(elp);
+    eldiv.innerHTML = elinp ;
+    elmain.appendChild(eldiv);
+    console.log("Ola");
+
+    }
+      </script>
+</body>
+
+</html>
