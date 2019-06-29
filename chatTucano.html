@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="chatsStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Chat</title>
+</head>
+<body>
+    <style>
+        body {
+             background-image: url("image/yellow.jpg");
+         } 
+         @media (min-width: 768px) {
+           .bd-placeholder-img-lg {
+             font-size: 3.5rem;
+           }
+         }
+       </style>
+     <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+             <div class="navbar-header">
+                 <a class="navbar-brand" href="index.html">Projeto Yellow Lemon</a>
+             </div>
+             <ul class="nav navbar-nav">
+                 <li >
+                     <a href="index.html">Home</a>
+                 </li>
+                 <li>
+                     <a href="perfil.html">Perfil</a>
+                 </li class="active">
+                 <li>
+                     <a href="">Chat</a>
+                 </li>
+                 <li>
+                     <a href="">Contato</a>
+                 </li>
+                 <li>
+                   <a href="questionario.html">Questionario</a>
+               </li>
+             </ul>
+         </div>
+     </nav>
+     <div class="container">          
+          <div class="col-md-8">
+            <div class="settings-tray">
+                <div class="friend-drawer no-gutters friend-drawer--grey">
+                <img class="profile-image" src="./image/matDev.jpg" alt="">
+                <div class="text">
+                  <h6>Prado</h6>
+                  <p class="text-muted">Ola, Como vai você?</p>
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="chat-box-tray">
+                    <input type="text" placeholder="Type your message here...">
+                    <i class="material-icons">send</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
