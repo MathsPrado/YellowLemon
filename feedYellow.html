@@ -1,100 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FeedYellow</title>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <link rel="stylesheet" href="feedStyle.css">
   </head>
-<body>
-    
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Projeto YellowLemon</a>
-            </div>
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="feedYellow.html">Chat<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                  </li>
-            </ul>
+  <body>
+    <header id='main-header'>
+      <div class='header-content'>
+        <div class="primary-content">
+          <a href="index.html">Projeto Yellow Lemon</a>
         </div>
-    </nav>
-    <br>
-    <br>
-    <main role="main" class="container">
-        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
-            
-                <input id="clone" type="text" class="form-control" placeholder="Digite..." aria-label="" aria-describedby="basic-addon1">
-                <div class="input-group-prepend">
-                  <button  class="btn btn-outline-secondary" onclick="milgrau()" type="button">Enviar</button>
-                </div>
-            
-          </div>
-      
-        <div  id="pop" class="my-3 p-3 bg-white rounded shadow-sm">
-          <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-          <div class="media text-muted pt-3">
-            
-            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-              <strong class="d-block text-gray-dark">@username</strong>
-              Vamos conversar sobre alguma coisa
-            </p>
-          </div>
-          
-         
-        </div>
-      
-        
-        </div>
-      </main>
-      <script>
-  function milgrau(){
-    var elmain = document.getElementById('pop');
-    var elinp = document.getElementsById('clone').value;  
-    let eldiv = document.createElement('div');
-    eldiv.className = "media text-muted pt-3";
-    let elp = document.createElement('p');
-    elp.className = 'media-body pb-3 mb-0 small lh-125 border-bottom border-gray';
-    let elstrong = document.createElement('strong');
-    var textx = document.createTextNode("@user");
-    elstrong.innerHTML = textx;
-    elp.appendChild(elstrong);
-    eldiv.appendChild(elp);
-    eldiv.innerHTML = elinp ;
-    elmain.appendChild(eldiv);
-    console.log("Ola");
+        <div class="secundary-content">
+          <a href="index.html">Home</a>
 
-    }
-      </script>
-</body>
+          <a href="perfil.html">Perfil</a>
+
+          <a href="chat.html">Chat</a>
+
+          <a href="">Contato</a>
+
+          <a href="questionario.html">Questionario</a>
+        </div> 
+      </div>
+    </header>
+    <div  id="content">
+      <input type='text' placeholder="digite..."/>
+      <button type="submit">Enviar</button>
+      <div class="feed-list">
+        <div class="feed-text">
+          <p>@User</p>
+          <p>queria falar mais</p>
+        </div>
+        <div class="feed-text">
+            <p>@User</p>
+            <p>queria falar mais</p>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
