@@ -1,79 +1,138 @@
-.container{
-    width: 1080px;
-    height: 500px;
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+
+
+header#main-header{
+  overflow: hidden;
+  background: #fff;
+  height: 72px;
+  border-bottom: 1px solid #DDD; 
+  
+}
+
+header#main-header .header-content{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 16px;
+  
+}
+header#main-header .header-content a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+header#main-header .header-content a:hover{
+  color:#E5E106;
+}
+header#main-header .header-content a:active{
+  color:#FAF601;
+}
+header#main-header .header-content a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.secundary-content{
+  float: right;
+}
+
+#content{
+  width: 100%;
+  max-width: 980px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+  position: auto;
+  height: 100%;
+  max-height: 580px;
+  display: block;
+}
+
+#content .bar-left{
+  display: table-cell;
+  background: #06425C;
+  height: 480px;
+  width:  230px;
+}
+
+#content .bar-left .nav-user{
+  padding: 1px;
+  background: rgb(109, 109, 103);
+  color: #fff;
+}
+#content .bar-left .nav-user h6{
+  padding-left: 10px;
+}
+
+#content .bar-left .my-friends {
+  display: block;
+  color: rgba(207, 197, 197, 0.979);
+  padding: 8px 16px;
+  text-decoration: none;
+  
+} 
+
+#content .bar-left .my-friends:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 .profile-image {
   width: 50px;
   height: 50px;
-  border-radius: 40px;
+  border-radius: 40px black;
 }
 
-.settings-tray {
-  background: #eee;
-  padding: 10px 15px;
-  border-radius: 7px;
-  width: auto;
+#content .bar-right{
+  display: table-cell;
+  height: 480px;
+  width: 750px;
+  max-width: auto;
+  padding: 5px;
+  background: #F2F2F2;
 }
 
-input {
-  border: none;
-  border-radius: 30px;
-  width: 80%;
-
-  &::placeholder {
-    color: #e3e3e3;
-    font-weight: 300;
-    margin-left: 20px;
-  }
-
-  &:focus {
-    outline: none;
-  }
+#content .text-area{
+  height: 100%;
+  max-height:  380px;
 }
 
-  .text {
-    margin-left: 12px;
-    width: 70%;
-    
-    h6 {
-      margin-top: 6px;
-      margin-bottom: 0;
-    }
-    
-    p {
-      margin: 0;
-    }
-  }
-  
-
-hr {
-  margin: 5px auto;
-  width: 60%;
+.dialog img p{
+  display: block;
+  background: #429dec;
 }
 
+input{
+  width: 650px;
+  height: 30px;
+}
 
+button{
+  width: 80px;
+  height: 35px;
+  border-radius: 15px;
+}
 
-.chat-box-tray {
-  background: #eee;
-  display: flex;
-  align-items: baseline;
-  padding: 10px 15px;
-  align-items: center;
-  margin-top: 19px;
-  bottom: 0;
-  
-  input {
-    margin: 0 10px;
-    padding: 6px 2px;
-  }
-  
-  i {
-    color: grey;
-    font-size: 30px;
-    vertical-align: middle;
-    
-    &:last-of-type {
-      margin-left: 25px;
-    }
-  }
+button:hover{
+  background:#429dec;
 }
